@@ -9,9 +9,9 @@ current: index
   <header>
     <h2 class="lato-bold">
       Assignment
-      <p class="lato-bold font-primary">All Courses
-        <span>⌵</span>
-      </p>
+      <select class="lato-bold font-primary">
+        <option value="">All Courses</option>
+      </select>
     </h2>
     <div class="icons">
       <span class="material-icons">
@@ -23,9 +23,9 @@ current: index
     </div>
   </header>
   <div class="comment-quantity">
-    <p class="lato-bold font-primary">All (4)
-      <span>⌵</span>
-    </p>
+    <select class="lato-bold font-primary">
+      <option value="">All (4)</option>
+    </select>
     <p class="lato-regular text-secondary">2 comments</p>
   </div>
   <div class="comment">
@@ -73,52 +73,161 @@ current: index
         </li>
       </ul>
     </div>
-    <div class="comment-content">
-      <div class="mission-name bg-main">
-        <p class="lato-regular font-secondary">Chapter Assignment 2 / HTML&CSS</p>
-        <p class="lato-bold font-primary">Please check this file for me, thanks!</p>
-        <span></span>
+    <div class="comment-detail">
+      <div class="comment-content">
+        <div class="mission-name bg-main">
+          <p class="lato-regular font-secondary">Chapter Assignment 2 / HTML&CSS</p>
+          <p class="lato-bold font-primary">Please check this file for me, thanks!</p>
+          <span></span>
+        </div>
+        <div class="mission-detail">
+          <img src="./assets/images/emilywang.jpeg" alt="avatar" class="avatar">
+          <ul>
+            <li>
+              <p class="lato-bold font-primary">Emily Wang</p>
+            </li>
+            <li>
+              <p class="lato-regular font-secondary text-secondary">10:38 AM (4 hours ago)</p>
+            </li>
+            <li>
+              <p class="lato-regular font-secondary">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the 
+                <span class="bg-main text-keypoint px-1">div</span> is bigger than the height of the 
+                <span class="bg-main text-keypoint px-1">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?
+              </p>
+            </li>
+            <li class="download-btn bg-main">
+              <a href="#">
+                <span class="material-icons">
+                  attach_file
+                </span>
+                <p class="lato-bold font-primary">HW-2-David.zip</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mission-detail">
+          <img src="./assets/images/andychen.jpeg" alt="avatar" class="avatar">
+          <ul>
+            <li class="mission-title">
+              <p class="lato-bold font-primary">Andy Chen (You)</p>
+              <div class="icons">
+                <span class="material-icons">
+                  star_outline
+                </span>
+                <span class="material-icons">
+                  edit
+                </span>
+              </div>
+            </li>
+            <li>
+              <p class="lato-regular font-secondary text-secondary">13:24 AM (1 hours ago)</p>
+            </li>
+            <li>
+              <p class="lato-regular font-secondary">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                <br><br>
+                You can:
+                <br><br>
+                • adjust the 
+                <span class="bg-main text-keypoint">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="bg-main text-keypoint">middle</span> ) or
+                <br>
+                • change the <span class="bg-main text-keypoint">display</span> so it isn’t inline.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="mission-detail">
-        <img src="./assets/images/emilywang.jpeg" alt="avatar" class="avatar">
-        <ul>
-          <li>
-            <p class="lato-bold font-primary">Emily Wang</p>
-          </li>
-          <li>
-            <p class="lato-regular font-secondary text-secondary">10:38 AM (4 hours ago)</p>
-          </li>
-          <li>
-            <p class="lato-regular font-secondary">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the 
-              <span class="bg-main text-keypoint px-1">div</span> is bigger than the height of the 
-              <span class="bg-main text-keypoint px-1">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
-          </li>
-          <li class="download-btn bg-main">
-            <span class="material-icons">
-              attach_file
-            </span>
-            <p class="lato-bold font-primary">HW-2-David.zip</p>
-          </li>
-        </ul>
-      </div>
-      <div class="mission-detail">
-        <img src="./assets/images/andychen.jpeg" alt="avatar" class="avatar">
-        <ul>
-          <li>
-            <p class="lato-bold font-primary">Andy Chen (You)</p>
-            <div class="icons">
-              <span></span>
-              <span></span>
-            </div>
-          </li>
-          <li>
-            <p class="lato-regular font-secondary text-secondary">13:24 AM (1 hours ago)</p>
-          </li>
-          <li>
-            <p class="lato-regular font-secondary">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. You can: 　• adjust the vertical-align of the image to position it elsewhere (e.g. the middle ) or 　• change the display so it isn’t inline.</p>
-          </li>
-        </ul>
+      <div class="comment-footer">
+        <div class="next-icons">
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+        <div class="button">
+          <button type="button" class='btn btn-outline-success rounded-0'>Mark as read</button>
+          <button class='btn-reply' data-toggle="collapse" data-target="#textEditorModal">Reply</button>
+        </div>
+        <div class="collapse custom bg-white" id="textEditorModal">
+          <ul class='d-flex align-items-center bg-main py-3'>
+            <li>
+              <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Body Text
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a href="#" class="dropdown-item h1">Heading 1</a>
+                  <a href="#" class="dropdown-item h2">Heading 2</a>
+                  <a href="#" class="dropdown-item h3">Heading 3</a>
+                  <a href="#" class="dropdown-item h4">Heading 4</a>
+                  <a href="#" class="dropdown-item h5">Heading 5</a>
+                  <a href="#" class="dropdown-item h6">Heading 6</a>
+                </div>
+              </div>
+            </li>
+            <li class="textTools-item">
+              <a href="#" class="ml-4">
+                <span class="material-icons">format_bold</span>
+              </a>
+            </li>
+            <li class="textTools-item">
+              <a href="#" class="ml-4">
+                <span class="material-icons">format_italic</span>
+              </a>
+            </li>
+            <li class="textTools-item">
+              <a href="#" class="ml-4">
+                <span class="material-icons">format_list_bulleted</span>
+              </a>
+            </li>
+            <li class="textTools-item">
+              <a href="#" class="ml-4">
+                <span class="material-icons">format_list_numbered</span>
+              </a>
+            </li>
+            <li class="textTools-item">
+              <a href="#" class="ml-4">
+                <span class="material-icons">insert_photo</span>
+              </a>
+            </li>
+            <li class="textTools-item">
+              <a href="#" class="ml-4">
+                <span class="material-icons">
+                  insert_link
+                </span>
+              </a>
+            </li>
+            <li class="textTools-item">
+              <a href="#" class="ml-4">
+                <span class="material-icons">code</span>
+              </a>
+            </li>
+          </ul>
+          <textarea cols="30" rows="10" class="border-0 w-100" value="Reply an answer"></textarea>
+          <div class="button text-right mr-4">
+            <button type="button" data-toggle="collapse" data-target="#textEditorModal" class='btn btn-outline-success rounded-0'>Cancel</button>
+            <button class='btn-reply'>Reply</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Modal -->
+<!-- <div class="modal zoom-in fade" data-backdrop="static" id="textEditorModal" tabindex="-1" role="dialog" aria-labelledby="textEditorModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="textEditorModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->

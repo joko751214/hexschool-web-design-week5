@@ -1,0 +1,340 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: admin
+---
+
+<div class="admin">
+  <header>
+    <h2 class="lato-bold">
+      Assignment
+      <p class="ml-5 lato-bold font-primary" data-toggle="modal" data-target="#ModalNew">
+        <span class="text-keypoint">＋</span>
+        Add New Admin
+      </p>
+    </h2>
+    <div class="icons">
+      <span class="material-icons">
+        search
+      </span>
+      <span class="material-icons">
+        notifications_active
+      </span>
+    </div>
+  </header>
+  <table>
+    <tr>
+      <th class="lato-bold font-primary">ID
+        <span class="text-keypoint">↓</span>
+      </th>
+      <th class="lato-bold font-primary">Name</th>
+      <th class="lato-bold font-primary">Email</th>
+      <th class="lato-bold font-primary">Verified</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td class="lato-regular font-primary">#1</td>
+      <td class="lato-regular font-primary">Emir Wicks</td>
+      <td class="lato-regular font-primary">emir.wicks@mail.com</td>
+      <td class="lato-regular font-primary">Yes</td>
+      <td class="lato-regular font-primary">
+        <span class="material-icons mr-3" data-toggle="modal" data-target="#ModalView">visibility</span>
+        <span class="material-icons" data-toggle="modal" data-target="#ModalEdit">edit</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="lato-regular font-primary">#2</td>
+      <td class="lato-regular font-primary">Zaina Goldsmith</td>
+      <td class="lato-regular font-primary">zaina.goldsmith@mail.com</td>
+      <td class="lato-regular font-primary">Yes</td>
+      <td class="lato-regular font-primary"><span class="material-icons mr-3">visibility</span><span class="material-icons">edit</span></td>
+    </tr>
+    <tr>
+      <td class="lato-regular font-primary">#3</td>
+      <td class="lato-regular font-primary">Mahima Lopez</td>
+      <td class="lato-regular font-primary">Mahima.Lopez@mail.com</td>
+      <td class="lato-regular font-primary">Yes</td>
+      <td class="lato-regular font-primary"><span class="material-icons mr-3">visibility</span><span class="material-icons">edit</span></td>
+    </tr>
+    <tr>
+      <td class="lato-regular font-primary">#4</td>
+      <td class="lato-regular font-primary">Pharrell Murray</td>
+      <td class="lato-regular font-primary">Pharrell.Murray@mail.com</td>
+      <td class="lato-regular font-primary">Yes</td>
+      <td class="lato-regular font-primary"><span class="material-icons mr-3">visibility</span><span class="material-icons">edit</span></td>
+    </tr>
+    <tr>
+      <td class="lato-regular font-primary">#5</td>
+      <td class="lato-regular font-primary">Annika Mcbride</td>
+      <td class="lato-regular font-primary">Annika.Mcbride@mail.com</td>
+      <td class="lato-regular font-primary">Yes</td>
+      <td class="lato-regular font-primary"><span class="material-icons mr-3">visibility</span><span class="material-icons">edit</span></td>
+    </tr>
+    <tr>
+      <td class="lato-regular font-primary">#6</td>
+      <td class="lato-regular font-primary">Fatimah Clark</td>
+      <td class="lato-regular font-primary">Fatimah.Clark@mail.com</td>
+      <td class="lato-regular font-primary">Yes</td>
+      <td class="lato-regular font-primary"><span class="material-icons mr-3">visibility</span><span class="material-icons">edit</span></td>
+    </tr>
+    <tr>
+      <td class="lato-regular font-primary">#7</td>
+      <td class="lato-regular font-primary">Klaudia Rhodes</td>
+      <td class="lato-regular font-primary">Klaudia.Rhodes@mail.com</td>
+      <td class="lato-regular font-primary">Yes</td>
+      <td class="lato-regular font-primary"><span class="material-icons mr-3">visibility</span><span class="material-icons">edit</span></td>
+    </tr>
+    <tr>
+      <td class="lato-regular font-primary">#8</td>
+      <td class="lato-regular font-primary">Tillie Lucero</td>
+      <td class="lato-regular font-primary">Tillie.Lucero@mail.com</td>
+      <td class="lato-regular font-primary">Yes</td>
+      <td class="lato-regular font-primary"><span class="material-icons mr-3">visibility</span><span class="material-icons">edit</span></td>
+    </tr>
+    <tr>
+      <td class="lato-regular font-primary">#9</td>
+      <td class="lato-regular font-primary">Sabrina Stephenson</td>
+      <td class="lato-regular font-primary">Sabrina.Stephenson@mail.com</td>
+      <td class="lato-regular font-primary">Yes</td>
+      <td class="lato-regular font-primary"><span class="material-icons mr-3">visibility</span><span class="material-icons">edit</span></td>
+    </tr>
+    <tr>
+      <td class="lato-regular font-primary">#10</td>
+      <td class="lato-regular font-primary">Annie Smith</td>
+      <td class="lato-regular font-primary">Annie.Smith@mail.com</td>
+      <td class="lato-regular font-primary">Yes</td>
+      <td class="lato-regular font-primary"><span class="material-icons mr-3">visibility</span><span class="material-icons">edit</span></td>
+    </tr>
+  </table>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end">
+      <li class="page-item">
+        <a class="page-link border-success btn-outline-success text-success" href="#" tabindex="-1" aria-disabled="true">&lt;</a>
+      </li>
+      <li class="page-item"><a class="page-link border-success btn-outline-success" href="#">1</a></li>
+      <li class="page-item"><a class="page-link border-success btn-outline-success" href="#">2</a></li>
+      <li class="page-item"><a class="page-link border-success btn-outline-success" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link border-success btn-outline-success text-success" href="#">&gt;</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Modal-view -->
+<div class="modal fade" id="ModalView" tabindex="-1" role="dialog" aria-labelledby="ModalViewLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body d-flex p-4">
+        <img src="./assets/images/emir.jpeg" class="card-img mr-4" alt="">
+        <ul>
+          <li class="d-flex align-items-center justify-content-between">
+            <h5>#1</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </li>
+          <li>
+            <p>Admin</p>
+          </li>
+          <li>
+            <h2>Emir Wicks</h2>
+          </li>
+          <li>
+            <p>emir.wicks@mail.com</p>
+          </li>
+          <li>
+            <span class="bg-main">Verified</span>
+          </li>
+          <li>
+
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal-new -->
+<div class="modal fade" id="ModalNew" tabindex="-1" role="dialog" aria-labelledby="ModalNewLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h2 class="modal-title mb-4 h5 lato-bold" id="ModalNewLabel">
+          New Admin
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </h2>
+        <form>
+          <div class="form-group">
+            <h3 class="h6 lato-bold mb-3">Account</h3>
+            <label for="name" class="lato-regular">Name</label>
+            <input type="text" class="form-control rounded-0 mb-3" id="name">
+            <label for="email" class="lato-regular">Email</label>
+            <input type="email" class="form-control rounded-0 mb-3" id="email"></input>
+          </div>
+          <hr>
+          <div class="form-group">
+            <h3 class="h6 lato-bold mb-3">Verification</h3>
+            <p class="lato-bold mb-3 d-flex align-items-center">
+              <span class="material-icons mr-2 text-danger">
+                warning
+              </span>
+              Unverified
+            </p>
+            <button class="ml-0 w-100 rounded-0 btn btn-outline-success">Send Verification Mail</button>
+          </div>
+          <hr>
+          <div class="form-group">
+            <h3 class="h6 lato-bold mb-3">Access Level</h3>
+            <select class="form-control lato-regular rounded-0" id="access-level">
+              <option>-Choose access level-</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+          <hr>
+          <div class="form-group">
+            <h3 class="h6 lato-bold mb-3">Custom Access</h3>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="lecture">
+              <label class="form-check-label" for="lecture">
+                Lecture
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="coupon">
+              <label class="form-check-label" for="coupon">
+                Coupon
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="message">
+              <label class="form-check-label" for="message">
+                Message
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="setting">
+              <label class="form-check-label" for="setting">
+                Setting
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="task-menu">
+              <label class="form-check-label" for="task-menu">
+                Task Menu
+              </label>
+            </div>
+          </div>
+          <div class="button text-right mr-4">
+            <button type="button" class='btn btn-outline-success rounded-0'>Cancel</button>
+            <button class='btn-reply'>Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal-edit -->
+<div class="modal fade" id="ModalEdit" tabindex="-1" role="dialog" aria-labelledby="ModalEditLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h2 class="modal-title mb-4 h5 lato-bold" id="ModalEditLabel">
+          New Admin
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </h2>
+        <form>
+          <div class="form-group">
+            <h3 class="h6 lato-bold mb-3">Account</h3>
+            <label for="name" class="lato-regular">Name</label>
+            <input type="text" class="form-control rounded-0 mb-3" id="name">
+            <label for="email" class="lato-regular">Email</label>
+            <input type="email" class="form-control rounded-0 mb-3" id="email"></input>
+          </div>
+          <hr>
+          <div class="form-group">
+            <h3 class="h6 lato-bold mb-3">Verification</h3>
+            <p class="lato-bold mb-3 d-flex align-items-center">
+              <span class="material-icons mr-2 text-keypoint">
+                check_circle
+              </span>
+              Verified
+            </p>
+            <button class="ml-0 w-100 rounded-0 btn btn-outline-success">Send Verification Mail</button>
+          </div>
+          <hr>
+          <div class="form-group">
+            <h3 class="h6 lato-bold mb-3">Access Level</h3>
+            <select class="form-control lato-regular rounded-0" id="access-level">
+              <option>-Choose access level-</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+          <hr>
+          <div class="form-group">
+            <h3 class="h6 lato-bold mb-3">Custom Access</h3>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="lecture">
+              <label class="form-check-label" for="lecture">
+                Lecture
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="coupon">
+              <label class="form-check-label" for="coupon">
+                Coupon
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="message">
+              <label class="form-check-label" for="message">
+                Message
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="setting">
+              <label class="form-check-label" for="setting">
+                Setting
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="task-menu">
+              <label class="form-check-label" for="task-menu">
+                Task Menu
+              </label>
+            </div>
+          </div>
+          <hr>
+          <div class="form-group">
+            <h3 class="h6 lato-bold mb-3">Deactivate Account</h3>
+            <p class="lato-bold mb-3 d-flex align-items-center text-danger">
+              <span class="material-icons mr-2 text-danger">
+                warning
+              </span>
+              This cannot be undone!
+            </p>
+            <button class="ml-0 w-100 rounded-0 btn btn-outline-danger">Deactivate This Account</button>
+          </div>
+          <div class="button text-right mr-4">
+            <button type="button" class='btn btn-outline-success rounded-0'>Cancel</button>
+            <button class='btn-reply'>Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
