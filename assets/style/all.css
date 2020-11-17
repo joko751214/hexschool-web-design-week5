@@ -107,7 +107,7 @@ img {
 .menu {
   width: 100%; }
   .menu li {
-    margin-bottom: 26px; }
+    margin-bottom: 23px; }
     .menu li:nth-child(1) {
       margin-bottom: 32px;
       padding-left: 32px; }
@@ -115,7 +115,7 @@ img {
     color: #121212;
     text-decoration: none;
     display: block;
-    padding-left: 32px; }
+    padding: 6px 32px; }
     .menu a:hover {
       color: #2A8356;
       background-color: #cde1d0; }
@@ -261,6 +261,7 @@ header {
   .next-icons a {
     width: 8px;
     height: 8px;
+    display: block;
     margin-right: 23px;
     text-decoration: none;
     -webkit-transform: rotate(45deg);
@@ -335,5 +336,15 @@ table {
 .card-img {
   width: 141px;
   height: 141px; }
+
+.expand .material-icons {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.expand[aria-expanded='true'] .material-icons {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
 
 /*# sourceMappingURL=all.css.map */
