@@ -32,3 +32,10 @@ table
 .card-img
   width: 141px
   height: 141px
+
+.expand
+  .material-icons
+    transition: 0.3s 
+  &[aria-expanded='true']
+    .material-icons
+      transform: rotate(180deg)
