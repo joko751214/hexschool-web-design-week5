@@ -10,6 +10,7 @@ table
   width: 100%
   margin-bottom: 63px
   tr
+    cursor: pointer
     &:hover
       background-color: #EDF4EE
     &:nth-child(1):hover
@@ -32,3 +33,10 @@ table
 .card-img
   width: 141px
   height: 141px
+
+.expand
+  .material-icons
+    transition: 0.3s 
+  &[aria-expanded='true']
+    .material-icons
+      transform: rotate(180deg)
