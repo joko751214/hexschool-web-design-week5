@@ -103,23 +103,24 @@ img {
           justify-content: space-between;
   width: 25%;
   padding: 32px 0 32px; }
+  .layout a {
+    display: block;
+    margin-bottom: 32px;
+    padding-left: 32px; }
 
-.menu {
+.menu-list {
   width: 100%; }
-  .menu li {
-    margin-bottom: 23px; }
-    .menu li:nth-child(1) {
-      margin-bottom: 32px;
-      padding-left: 32px; }
-  .menu a {
+  .menu-list li {
+    margin-bottom: 26px; }
+  .menu-list a {
     color: #121212;
     text-decoration: none;
     display: block;
     padding: 6px 32px; }
-    .menu a:hover {
+    .menu-list a:hover {
       color: #2A8356;
       background-color: #cde1d0; }
-  .menu span {
+  .menu-list span {
     vertical-align: middle;
     margin-right: 16px; }
 
@@ -135,11 +136,14 @@ img {
   border-radius: 50%;
   margin-right: 8px; }
 
+.material-icons {
+  cursor: pointer; }
+
 .assignment {
   width: 75%;
   padding: 32px; }
 
-header {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,7 +151,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 44px; }
-  header h2 {
+  .header h2 {
     font-size: 24px;
     line-height: 29px;
     display: -webkit-box;
@@ -156,10 +160,11 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    header h2 select {
+    .header h2 select {
       margin-left: 46px;
-      border: none; }
-  header span {
+      border: none;
+      cursor: pointer; }
+  .header li {
     margin-left: 7px; }
 
 .comment-quantity {
@@ -170,7 +175,8 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .comment-quantity select {
-    border: none; }
+    border: none;
+    cursor: pointer; }
 
 .comment {
   display: -webkit-box;
@@ -188,7 +194,10 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 12px; }
+    padding: 12px;
+    cursor: pointer; }
+    .comment-mission li:hover {
+      background-color: #EDF4EE; }
 
 .mission-name p:nth-child(2) {
   margin-top: 4px; }
@@ -314,11 +323,13 @@ button {
 table {
   width: 100%;
   margin-bottom: 63px; }
-  table tr:hover {
-    background-color: #EDF4EE; }
-  table tr:nth-child(1):hover {
-    cursor: initial;
-    background-color: #fff; }
+  table tr {
+    cursor: pointer; }
+    table tr:hover {
+      background-color: #EDF4EE; }
+    table tr:nth-child(1):hover {
+      cursor: initial;
+      background-color: #fff; }
   table th {
     border-bottom: 1px solid; }
   table td {
