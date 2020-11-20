@@ -2,7 +2,7 @@
   width: 75%
   padding: 32px
 
-header
+.header
   display: flex
   justify-content: space-between
   margin-bottom: 44px
@@ -14,7 +14,8 @@ header
     select
       margin-left: 46px
       border: none
-  span
+      cursor: pointer
+  li
     margin-left: 7px
 
 .comment-quantity
@@ -22,6 +23,7 @@ header
   justify-content: space-between
   select
     border: none
+    cursor: pointer
 
 .comment
   display: flex
@@ -33,6 +35,9 @@ header
     display: flex
     justify-content: space-between
     padding: 12px
+    cursor: pointer
+    &:hover
+      background-color: #EDF4EE
 .mission-name
   p:nth-child(2)
     margin-top: 4px
